@@ -1,0 +1,2395 @@
+{
+  "metadata": {
+    "title": "Under 65 Support Service Database",
+    "created": "2026-07-14T05:54:52.525Z",
+    "scope": "Curated practical hospital social work referral support for under-65 adults in the Melbourne/SVHM context.",
+    "sources": [
+      "services U65 audited.xlsx",
+      "pasted-text.txt"
+    ],
+    "updated": "2026-07-14T13:35:28.191Z",
+    "notes": [
+      "Carer Gateway split into separate respite and counselling service rows.",
+      "Curated from 97 to 59 services for hospital social work relevance; removed duplicate, interstate, child/school, cyber-safety, very niche, outdated-looking, and source-mismatched directory rows.",
+      "Added displayCategory to consolidate user-facing service groups and expanded common acronyms in service titles.",
+      "Filled referral pathways for Beyond Blue, Lifeline, Leukaemia Foundation, Cancer Council and Dementia Australia from current public source pages.",
+      "Renamed display categories to concise labels and split Financial from Legal.",
+      "Audited referral pathways against current public web evidence; replaced blank/no-formal-referral entries with hotline, phone, email, portal or contact-page pathways where supported.",
+      "Removed fax from referral pathways and kept phone/email/portal options only.",
+      "Filled previously blank descriptions for ARBIAS, Victim of Crime Financial Assistance Scheme and Post-acute Care.",
+      "Added Stroke Foundation - StrokeLine as a condition-specific support service."
+    ]
+  },
+  "topNeeds": [
+    {
+      "id": "post-acute",
+      "label": "Post-acute / discharge support",
+      "aliases": [
+        "post acute",
+        "hospital",
+        "discharge",
+        "hith",
+        "rehab",
+        "home care",
+        "clinical"
+      ]
+    },
+    {
+      "id": "housing",
+      "label": "Housing / homelessness",
+      "aliases": [
+        "housing",
+        "homeless",
+        "accommodation",
+        "rough sleeping",
+        "frontyard"
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "Transport / travel / visitor support",
+      "aliases": [
+        "transport",
+        "travel",
+        "taxi",
+        "visitor",
+        "vptas",
+        "accommodation"
+      ]
+    },
+    {
+      "id": "family-violence",
+      "label": "FV",
+      "aliases": [
+        "family violence",
+        "safe steps",
+        "violence",
+        "sexual assault",
+        "elder abuse"
+      ]
+    },
+    {
+      "id": "disability",
+      "label": "Disability",
+      "aliases": [
+        "disability",
+        "ndis",
+        "brain injury",
+        "dlo"
+      ]
+    },
+    {
+      "id": "financial-legal",
+      "label": "Financial / legal / compensation",
+      "aliases": [
+        "legal",
+        "financial",
+        "compensation",
+        "centrelink",
+        "tac",
+        "victims",
+        "workcover",
+        "vcat",
+        "guardian"
+      ]
+    },
+    {
+      "id": "mental-health-aod",
+      "label": "Mental health / AOD",
+      "aliases": [
+        "mental health",
+        "drug",
+        "alcohol",
+        "aod",
+        "suicide",
+        "lifeline",
+        "beyond blue"
+      ]
+    },
+    {
+      "id": "carer-family",
+      "label": "Carer / aged / family support",
+      "aliases": [
+        "carer",
+        "aged",
+        "child",
+        "family",
+        "young people",
+        "kids"
+      ]
+    },
+    {
+      "id": "identity-specific",
+      "label": "Aboriginal / CALD / LGBTIQA+ specific support",
+      "aliases": [
+        "aboriginal",
+        "culturally",
+        "migrant",
+        "asylum",
+        "lgbti",
+        "qlife",
+        "thorne",
+        "djirra"
+      ]
+    },
+    {
+      "id": "condition-specific",
+      "label": "Condition-specific health support",
+      "aliases": [
+        "cancer",
+        "dementia",
+        "palliative",
+        "multiple sclerosis",
+        "leukaemia",
+        "canteen",
+        "pain"
+      ]
+    },
+    {
+      "id": "veterans",
+      "label": "Veterans support",
+      "aliases": [
+        "veteran",
+        "dva"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "urgent",
+      "label": "Immediate risk or crisis"
+    },
+    {
+      "id": "young-person",
+      "label": "Young person"
+    },
+    {
+      "id": "carer",
+      "label": "Carer involved"
+    },
+    {
+      "id": "aboriginal",
+      "label": "Aboriginal or Torres Strait Islander"
+    },
+    {
+      "id": "culturally-diverse",
+      "label": "Culturally diverse / asylum seeker"
+    },
+    {
+      "id": "lgbtiqa",
+      "label": "LGBTIQA+"
+    },
+    {
+      "id": "veteran",
+      "label": "Veteran"
+    },
+    {
+      "id": "disability",
+      "label": "Person with disability"
+    },
+    {
+      "id": "homelessness",
+      "label": "Homeless or housing insecure"
+    },
+    {
+      "id": "hospital-discharge",
+      "label": "Recent hospital discharge"
+    },
+    {
+      "id": "none",
+      "label": "No specific situation"
+    }
+  ],
+  "supportTypes": [
+    {
+      "id": "case-management",
+      "label": "Case management / care coordination"
+    },
+    {
+      "id": "crisis",
+      "label": "Crisis phone or urgent access"
+    },
+    {
+      "id": "clinical",
+      "label": "Clinical / allied health"
+    },
+    {
+      "id": "personal-care",
+      "label": "Personal care or help at home"
+    },
+    {
+      "id": "money",
+      "label": "Money, payments or compensation"
+    },
+    {
+      "id": "legal",
+      "label": "Legal or advocacy help"
+    },
+    {
+      "id": "information",
+      "label": "Information / referral only"
+    }
+  ],
+  "services": [
+    {
+      "id": "directory-accommodation-transport-expenses-and-visitor-services-multi-purpose-taxi-program",
+      "name": "Multi-purpose taxi program",
+      "category": "Accommodation, transport expenses and visitor services",
+      "branchPath": [
+        "Accommodation, transport expenses and visitor services",
+        "transport",
+        "housing"
+      ],
+      "needTags": [
+        "transport",
+        "housing"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Victorians with a severe and permanent disability that significantly affects independent use of public transport, assessed under MPTP rules.",
+      "provider": "Safe Transport Victoria",
+      "catchment": "Victoria",
+      "referral": "Apply or manage membership through Safe Transport Victoria MPTP member/applicant information. Medical practitioner assessment is used to determine eligibility.",
+      "description": "Subsidised commercial passenger vehicle fares for eligible members with accessibility and mobility needs, usually 50% of the fare up to a per-trip cap.",
+      "link": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/",
+      "linkLabel": "Safe Transport Victoria - Multi Purpose Taxi Program",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Transport"
+    },
+    {
+      "id": "directory-accommodation-transport-expenses-and-visitor-services-travellers-aid",
+      "name": "Travellers Aid",
+      "category": "Accommodation, transport expenses and visitor services",
+      "branchPath": [
+        "Accommodation, transport expenses and visitor services",
+        "transport",
+        "housing"
+      ],
+      "needTags": [
+        "transport",
+        "housing"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Travellers in Melbourne and regional Victoria who need support with public transport access, mobility assistance or travel emergencies.",
+      "provider": "Travellers Aid Australia",
+      "catchment": "Melbourne and regional Victoria",
+      "referral": "Use the Travellers Aid contact page or service locations to enquire about mobility assistance, companion service, station lounges and travel emergency support.",
+      "description": "Not-for-profit travel support service helping people with special requirements or travel emergencies to use public transport and remain connected.",
+      "link": "https://www.travellersaid.org.au/",
+      "linkLabel": "Travellers Aid Australia",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Transport"
+    },
+    {
+      "id": "directory-aged-care-carers-victoria",
+      "name": "Carers Victoria",
+      "category": "Aged Care",
+      "branchPath": [
+        "Aged Care",
+        "carer-family"
+      ],
+      "needTags": [
+        "carer-family"
+      ],
+      "situationTags": [
+        "carer"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Unpaid carers, former carers and supporters seeking carer information, support, membership or local carer support groups.",
+      "provider": "Carers Victoria",
+      "catchment": "Victoria",
+      "referral": "Call Carers Victoria on 1800 514 845 or use the website to access carer advice, programs, membership and carer support groups.",
+      "description": "Victorian peak body for unpaid carers providing support, advice, advocacy, events, education and links to carer support groups.",
+      "link": "https://www.carersvictoria.org.au/",
+      "linkLabel": "Carers Victoria",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Carer"
+    },
+    {
+      "id": "verified-directline-0",
+      "name": "DirectLine",
+      "category": "Alcohol and other drug",
+      "branchPath": [
+        "Alcohol and other drug",
+        "mental-health-aod",
+        "carer-family"
+      ],
+      "needTags": [
+        "mental-health-aod",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "crisis",
+        "clinical"
+      ],
+      "eligibility": "People in Victoria concerned about their own or someone else's alcohol or drug use, including family members and health professionals.",
+      "provider": "AOD counselling and referral service",
+      "catchment": "Victoria",
+      "referral": "Phone 1800 888 236 or use online support; available 24 hours, 7 days.",
+      "description": "Free, confidential alcohol and drug counselling, information, support and referral in Victoria.",
+      "link": "https://www.directline.org.au/",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "MH/AOD"
+    },
+    {
+      "id": "verified-cancer-care-home-1",
+      "name": "Cancer Care @ Home",
+      "category": "Cancer / palliative care",
+      "branchPath": [
+        "Cancer / palliative care",
+        "post-acute",
+        "condition-specific"
+      ],
+      "needTags": [
+        "post-acute",
+        "condition-specific"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "Eligible SVHM Haematology or Oncology patients who are clinically stable, have a safe home environment, appropriate access, and treatment suitable for home administration.",
+      "provider": "Hospital (SVHM Cancer Services and District Nursing)",
+      "catchment": "Catchment based for home cancer treatment.",
+      "referral": "Internal pathway through Electronic Patient Journey Board and Cancer Care @ Home screening; coordinator phone 0478 970 116.",
+      "description": "Home administration of selected anti-cancer and supportive care therapies by specialist cancer nurses and district nurses, with allied health access as needed.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/cancer-care-home",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Clinical care at home"
+    },
+    {
+      "id": "verified-pallcare-home-2",
+      "name": "PallCare@Home",
+      "category": "Cancer / palliative care",
+      "branchPath": [
+        "Cancer / palliative care",
+        "post-acute",
+        "condition-specific",
+        "veterans"
+      ],
+      "needTags": [
+        "post-acute",
+        "condition-specific",
+        "veterans"
+      ],
+      "situationTags": [
+        "veteran",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "People with progressive life-limiting or life-threatening disease who need specialist multidisciplinary palliative care at home.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "Yarra, Boroondara and Darebin, or within 20 km of Fitzroy.",
+      "referral": "Internal SVHM referrals via Electronic Patient Journey Board. External referrals: call Caritas Christi Admission Coordinator on 03 9056 1005, Monday-Friday 8am-4pm; email cchadmissionscoordinator@svha.org.au with SCTT Palliative Care Supplementary information. PACE enquiries: 0408 060 790, Monday-Friday 8am-4pm.",
+      "description": "Short-term specialist palliative care at home, including symptom care, psychosocial support, respite, advance care planning, care coordination and end-of-life care at home.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/pallcare-home",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Clinical care at home"
+    },
+    {
+      "id": "verified-alert-psychosocial-hip-complex-care-3",
+      "name": "ALERT Psychosocial (HIP Complex Care)",
+      "category": "Care coordination / case management",
+      "branchPath": [
+        "Care coordination / case management",
+        "post-acute",
+        "housing",
+        "family-violence",
+        "disability",
+        "mental-health-aod",
+        "carer-family"
+      ],
+      "needTags": [
+        "post-acute",
+        "housing",
+        "family-violence",
+        "disability",
+        "mental-health-aod",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent",
+        "disability",
+        "homelessness",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "crisis",
+        "clinical"
+      ],
+      "eligibility": "People with complex psychosocial and medical needs, including frequent presenters or people at risk of re-presentation due to homelessness, substance use, mental health, family violence, disability or complex aged care needs.",
+      "provider": "Hospital (SVHM HIP / ALERT)",
+      "catchment": "",
+      "referral": "External referrals through HIP Central Intake: phone 1300 131 470 option 1; hipcentralreferrals@svha.org.au. Internal urgent ED requests via pager 204.",
+      "description": "Coordinated care bridging acute ED and community care, including ED care coordination and short-term community case management.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/hip-complex-care-services-psychosocial-alert",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Discharge"
+    },
+    {
+      "id": "verified-health-management-coaching-4",
+      "name": "Health Management Coaching",
+      "category": "Care coordination / case management",
+      "branchPath": [
+        "Care coordination / case management",
+        "post-acute"
+      ],
+      "needTags": [
+        "post-acute"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "Eligible SVHM clients needing support after an acute cardiac event, cardiac procedure, chronic heart failure or Type 2 diabetes.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "",
+      "referral": "Internal hospital referrals.",
+      "description": "Telephone-based coaching and education to support risk factor modification, self-management and links with usual care.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/health-management-coaching",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Discharge"
+    },
+    {
+      "id": "verified-hip-complex-care-5",
+      "name": "Health Independence Program (HIP) Complex Care",
+      "category": "Care coordination / case management",
+      "branchPath": [
+        "Care coordination / case management",
+        "post-acute"
+      ],
+      "needTags": [
+        "post-acute"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "People with complex needs linked to chronic conditions such as chronic lung disease, heart disease, diabetes, HIV and other chronic conditions.",
+      "provider": "Hospital (SVHM HIP)",
+      "catchment": "Primary catchment: Yarra, Boroondara and southern Darebin. Secondary catchment: parts of Darebin, Merri-bek, Stonnington and Melbourne. HIV service is statewide.",
+      "referral": "HIP Central Referrals: phone 1300 131 470; HIPCentralReferrals@svha.org.au.",
+      "description": "Multidisciplinary care coordination, disease-specific intervention and support for clients with complex needs.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/hip-complex-care-services-chronic-disease",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Discharge"
+    },
+    {
+      "id": "verified-carer-gateway-counselling",
+      "name": "Carer Gateway - counselling",
+      "category": "Carer support",
+      "branchPath": [
+        "Carer support",
+        "carer-family"
+      ],
+      "needTags": [
+        "carer-family",
+        "mental-health-aod"
+      ],
+      "situationTags": [
+        "carer"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "Carers feeling stressed, anxious, sad or frustrated.",
+      "provider": "Australian Government Carer Gateway service providers",
+      "catchment": "Australia",
+      "referral": "Call Carer Gateway on 1800 422 737 or access services through carergateway.gov.au.",
+      "description": "Carer Gateway offers in-person and phone counselling for carers.",
+      "link": "https://www.carergateway.gov.au/help-and-support/getting-support-carergatewy/services-and-support",
+      "linkLabel": "What services and support are available | Carer Gateway",
+      "source": "official public source",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Carer"
+    },
+    {
+      "id": "verified-carer-gateway-respite",
+      "name": "Carer Gateway - respite",
+      "category": "Carer support",
+      "branchPath": [
+        "Carer support",
+        "carer-family"
+      ],
+      "needTags": [
+        "carer-family"
+      ],
+      "situationTags": [
+        "carer"
+      ],
+      "supportTags": [
+        "personal-care",
+        "case-management"
+      ],
+      "eligibility": "Carers seeking planned respite or emergency respite support.",
+      "provider": "Australian Government Carer Gateway service providers",
+      "catchment": "Australia",
+      "referral": "Call Carer Gateway on 1800 422 737 or access services through carergateway.gov.au.",
+      "description": "Carer Gateway offers planned respite and access to emergency respite when a carer cannot provide care, such as illness or injury.",
+      "link": "https://www.carergateway.gov.au/help-and-support/getting-support-carergatewy/services-and-support",
+      "linkLabel": "What services and support are available | Carer Gateway",
+      "source": "official public source",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Carer"
+    },
+    {
+      "id": "directory-culturally-and-linguistically-diverse-cald-asylum-seeker-resource-centre",
+      "name": "Asylum Seeker Resource Centre",
+      "category": "Culturally and Linguistically Diverse (CaLD)",
+      "branchPath": [
+        "Culturally and Linguistically Diverse (CaLD)",
+        "identity-specific"
+      ],
+      "needTags": [
+        "identity-specific"
+      ],
+      "situationTags": [
+        "culturally-diverse"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People seeking asylum and refugees needing ASRC support, subject to program availability and eligibility.",
+      "provider": "Asylum Seeker Resource Centre",
+      "catchment": "Melbourne / Victoria",
+      "referral": "Call 03 9326 6066 or use the ASRC Get Help pathway. Public help hours listed by ASRC are Monday, Tuesday, Thursday and Friday, 10am-4pm.",
+      "description": "Community organisation providing practical support for people seeking asylum, including foodbank, material aid, support services, healthcare, legal and employment pathways.",
+      "link": "https://asrc.org.au/",
+      "linkLabel": "Asylum Seeker Resource Centre - Get Help",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Identity-specific"
+    },
+    {
+      "id": "verified-arbias-8",
+      "name": "ARBIAS",
+      "category": "Disability",
+      "branchPath": [
+        "Disability",
+        "disability"
+      ],
+      "needTags": [
+        "disability"
+      ],
+      "situationTags": [
+        "disability"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People with acquired brain injury or complex comorbidities who may need specialist disability, NDIS or community support.",
+      "provider": "arbias Ltd",
+      "catchment": "Victoria and New South Wales",
+      "referral": "Use the ARBIAS Make a referral pathway, or contact the Victorian team on 03 8388 1222 / EnquiriesVIC@arbias.com.au.",
+      "description": "Specialist acquired brain injury and complex needs disability service provider, including practical person-centred support, housing and daily living support, community connection and NDIS-related services.",
+      "link": "https://arbias.org.au/",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Disability",
+      "linkLabel": "ARBIAS"
+    },
+    {
+      "id": "verified-disability-liaison-officer-program-9",
+      "name": "Disability Liaison Officer Program",
+      "category": "Disability",
+      "branchPath": [
+        "Disability",
+        "post-acute",
+        "disability",
+        "carer-family"
+      ],
+      "needTags": [
+        "post-acute",
+        "disability",
+        "carer-family"
+      ],
+      "situationTags": [
+        "carer",
+        "disability",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "SVHM patients or people residing in Boroondara, Darebin, Melbourne or Yarra who have disability, plus families, carers and healthcare teams.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "SVHM patients; Boroondara, Darebin, Melbourne and Yarra residents.",
+      "referral": "Self-referral welcomed. Phone 03 9231 2733 or DisabilityLiaisonOfficerSVHM@svha.org.au.",
+      "description": "Supports people with disability and healthcare teams to reduce barriers to safer, more accessible and inclusive healthcare, and to connect with health and human services.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/disability-liaison-officer-program",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Disability"
+    },
+    {
+      "id": "verified-ndis-10",
+      "name": "National Disability Insurance Scheme (NDIS)",
+      "category": "Disability",
+      "branchPath": [
+        "Disability",
+        "disability",
+        "financial-legal"
+      ],
+      "needTags": [
+        "disability",
+        "financial-legal"
+      ],
+      "situationTags": [
+        "disability"
+      ],
+      "supportTags": [
+        "clinical",
+        "personal-care"
+      ],
+      "eligibility": "Under 65 when applying; Australian citizen, permanent resident or Protected Special Category Visa holder; lives in Australia; disability caused by permanent impairment that substantially affects everyday life, social/work/study participation, and requires NDIS supports across life.",
+      "provider": "National Disability Insurance Agency",
+      "catchment": "Australia",
+      "referral": "Apply through an NDIS partner or access request process; NDIS contact centre 1800 800 110.",
+      "description": "National scheme for disability-related supports for eligible people with permanent and significant disability.",
+      "link": "https://www.ndis.gov.au/applying/eligibility-requirements/how-check-your-eligibility",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Disability"
+    },
+    {
+      "id": "verified-young-adult-complex-disability-service-11",
+      "name": "Young Adult Complex Disability Service",
+      "category": "Disability",
+      "branchPath": [
+        "Disability",
+        "post-acute",
+        "disability",
+        "carer-family"
+      ],
+      "needTags": [
+        "post-acute",
+        "disability",
+        "carer-family"
+      ],
+      "situationTags": [
+        "young-person",
+        "disability",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "Young people aged 17 to 40 with complex physical and medical needs, predominantly cerebral palsy, who need medical and allied health input for transition from paediatric to adult services.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "Statewide Victoria.",
+      "referral": "Written referral to YoungAdult.ComplexDisability@svha.org.au.",
+      "description": "Statewide multidisciplinary service supporting transition to adult services, assessment, therapy, equipment, referrals and links with community clinicians.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/young-adult-complex-disability-service-yacds",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Disability"
+    },
+    {
+      "id": "verified-the-orange-door-12",
+      "name": "The Orange Door",
+      "category": "Family violence",
+      "branchPath": [
+        "Family violence",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [
+        "young-person"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "People experiencing or using family violence, and people needing support with the care and wellbeing of children and young people.",
+      "provider": "Victorian Government and partner agencies",
+      "catchment": "Victoria; local Orange Door areas.",
+      "referral": "Free service; no referral required. Find local support through The Orange Door. If in danger call 000.",
+      "description": "Family violence and child/family wellbeing access point that listens and links people to support quickly.",
+      "link": "https://www.orangedoor.vic.gov.au/",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-1800-respect-24-hour-counselling-support",
+      "name": "1800 Respect (24 hour counselling support)",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "crisis"
+      ],
+      "eligibility": "People in Australia impacted by domestic, family or sexual violence, and people supporting someone affected.",
+      "provider": "1800RESPECT",
+      "catchment": "Australia-wide",
+      "referral": "Call 1800 737 732, text 0458 737 732, use online chat or video call 24/7. Call 000 if in immediate danger.",
+      "description": "National 24/7 counselling, information and support service for domestic, family and sexual violence.",
+      "link": "https://1800respect.org.au/",
+      "linkLabel": "1800RESPECT",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-djirra-family-violence-and-legal-support-for-aboriginal-women",
+      "name": "Djirra – Family Violence and legal support for Aboriginal women",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "financial-legal",
+        "carer-family",
+        "identity-specific"
+      ],
+      "needTags": [
+        "family-violence",
+        "financial-legal",
+        "carer-family",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "aboriginal",
+        "culturally-diverse"
+      ],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "Aboriginal women and Aboriginal people seeking culturally safe family violence, legal and wellbeing support.",
+      "provider": "Djirra",
+      "catchment": "Victoria",
+      "referral": "Call Djirra on 1800 105 303 for intake, legal help or family violence support. Call 000 if in immediate danger.",
+      "description": "Culturally safe Aboriginal community-controlled service offering family violence prevention, legal support, Koori Women's Place, support services and cultural wellbeing programs.",
+      "link": "https://djirra.org.au/",
+      "linkLabel": "Djirra",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-intouch-multicultural-centre-against-family-violence",
+      "name": "InTouch Multicultural Centre Against Family Violence",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Migrant and refugee women, families and communities affected by family violence.",
+      "provider": "inTouch Multicultural Centre Against Family Violence",
+      "catchment": "Victoria",
+      "referral": "Call inTouch on 1800 755 988, Monday-Friday 9am-5pm, or use the Get Help page. Call 000 if in immediate danger.",
+      "description": "Specialist multicultural family violence service providing in-language and in-culture support, case management, legal centre support, migration assistance, crisis recovery and sector programs.",
+      "link": "https://intouch.org.au/",
+      "linkLabel": "inTouch - Get Help",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-safe-steps-24-hour-crisis-support",
+      "name": "Safe Steps (24 hour crisis support)",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "crisis"
+      ],
+      "eligibility": "People in Victoria experiencing family or domestic violence, including people needing immediate crisis support.",
+      "provider": "Safe Steps Family Violence Response Centre",
+      "catchment": "Victoria",
+      "referral": "Call 1800 015 188 any time, day or night, or use Safe Steps live chat. No formal referral required. Call 000 if in immediate danger.",
+      "description": "Statewide 24/7 confidential family and domestic violence crisis support service, including risk assessment, safety planning, referrals and crisis accommodation pathways.",
+      "link": "https://safesteps.org.au/",
+      "linkLabel": "Safe Steps",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-sexual-assault-crisis-line",
+      "name": "Sexual Assault Crisis Line",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "crisis"
+      ],
+      "eligibility": "Victorians affected by sexual assault, including victim-survivors and professionals seeking after-hours consultation.",
+      "provider": "Sexual Assault Crisis Line Victoria",
+      "catchment": "Victoria",
+      "referral": "Call 1800 806 292 for 24/7 counselling support. For recent sexual assault or professional consultation after hours, call 1800 577 011.",
+      "description": "Statewide telephone crisis counselling and after-hours support for people affected by sexual assault.",
+      "link": "https://www.sacl.com.au/",
+      "linkLabel": "Sexual Assault Crisis Line",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-family-violence-with-respect-lgbtiqa",
+      "name": "With Respect (LGBTIQA+)",
+      "category": "Family Violence",
+      "branchPath": [
+        "Family Violence",
+        "family-violence",
+        "carer-family",
+        "identity-specific"
+      ],
+      "needTags": [
+        "family-violence",
+        "carer-family",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "lgbtiqa"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "LGBTIQA+ people and families across Victoria impacted by family violence, including young people and professionals seeking secondary consultation.",
+      "provider": "Queerspace / WithRespect",
+      "catchment": "Victoria",
+      "referral": "Call 03 9663 6733 or email queerspacefv@ds.org.au for WithRespect case management, counselling or secondary consultation. For crisis response use 1800RESPECT, Safe Steps, SACL, QLife, Rainbow Door or 000 as appropriate.",
+      "description": "Family violence service for LGBTIQA+ people across Victoria, offering case management, counselling and secondary consultation through an LGBTIQA+ family violence lens.",
+      "link": "https://www.queerspace.org.au/our-programs/withrespect/",
+      "linkLabel": "Queerspace - WithRespect",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "FV"
+    },
+    {
+      "id": "directory-financial-centrelink",
+      "name": "Centrelink",
+      "category": "Financial",
+      "branchPath": [
+        "Financial",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "money"
+      ],
+      "eligibility": "People needing Centrelink payment, concession, crisis payment, income support or service information.",
+      "provider": "Services Australia",
+      "catchment": "Australia-wide",
+      "referral": "Use myGov / Centrelink online account for most claims and updates. Use Services Australia contact and service centre finder for the correct Centrelink phone line or local office.",
+      "description": "Australian Government payment and service access point covering Centrelink income support, concessions and related social security payments.",
+      "link": "https://www.servicesaustralia.gov.au/contact-us",
+      "linkLabel": "Services Australia - Contact us",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Financial"
+    },
+    {
+      "id": "verified-tac-13",
+      "name": "Transport Accident Commission (TAC)",
+      "category": "Financial / legal / compensation",
+      "branchPath": [
+        "Financial / legal / compensation",
+        "post-acute",
+        "transport",
+        "financial-legal",
+        "mental-health-aod"
+      ],
+      "needTags": [
+        "post-acute",
+        "transport",
+        "financial-legal",
+        "mental-health-aod"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical",
+        "personal-care",
+        "money",
+        "legal"
+      ],
+      "eligibility": "TAC clients with transport accident injuries where treatment or services are recommended by a doctor or health professional and are for accident injuries.",
+      "provider": "Transport Accident Commission (Victorian Government)",
+      "catchment": "Victoria",
+      "referral": "Contact TAC or the TAC claims manager for treatment needs and approvals; TAC contact page lists 1300 654 329.",
+      "description": "Can help pay for accident-related treatments and services, including hospital treatment, rehabilitation, community nursing, mental health and wellbeing services, travel, support at home, attendant care and support navigation.",
+      "link": "https://www.tac.vic.gov.au/clients/how-we-can-help/treatments-and-services",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Financial"
+    },
+    {
+      "id": "verified-victim-of-crime-financial-assistance-scheme-14",
+      "name": "Victim of Crime Financial Assistance Scheme",
+      "category": "Financial / legal / compensation",
+      "branchPath": [
+        "Financial / legal / compensation",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "money",
+        "legal"
+      ],
+      "eligibility": "People affected by violent crime in Victoria who may qualify as primary, secondary or related victims under the scheme.",
+      "provider": "Victims of Crime Financial Assistance Scheme / Victorian Government",
+      "catchment": "Victoria",
+      "referral": "Start a new application through the FAS portal, submit an online enquiry, or call the FAS Helpline on 1800 161 136, Monday-Friday 8:30am-5:30pm except public holidays.",
+      "description": "Official Victorian Government financial assistance scheme for people affected by crime, including eligibility checks, application support, payments and victim support links.",
+      "link": "https://www.victimsofcrime.vic.gov.au/fas",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Financial",
+      "linkLabel": "Victims of Crime Financial Assistance Scheme"
+    },
+    {
+      "id": "directory-guardianship-and-administration-office-of-the-public-advocate-opa",
+      "name": "Office of the Public Advocate (OPA)",
+      "category": "Guardianship and Administration",
+      "branchPath": [
+        "Guardianship and Administration",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "People needing information about guardianship, administration, medical treatment decision-making, enduring powers, advance care directives or rights of people with disability and mental illness.",
+      "provider": "Office of the Public Advocate Victoria",
+      "catchment": "Victoria",
+      "referral": "Call OPA Advice Service on 1300 309 337, Monday-Friday 9am-3pm, or use the OPA contact page.",
+      "description": "Victorian human rights organisation promoting and safeguarding the rights, dignity and inclusion of people with disability and mental illness.",
+      "link": "https://www.publicadvocate.vic.gov.au/",
+      "linkLabel": "Office of the Public Advocate",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Legal"
+    },
+    {
+      "id": "directory-guardianship-and-administration-victorian-civil-and-administrative-tribunal-vcat",
+      "name": "Victorian Civil and Administrative Tribunal (VCAT)",
+      "category": "Guardianship and Administration",
+      "branchPath": [
+        "Guardianship and Administration",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "People with a matter within VCAT jurisdiction, including guardianship and administration, residential tenancies, civil disputes, powers of attorney or other listed case types.",
+      "provider": "Victorian Civil and Administrative Tribunal",
+      "catchment": "Victoria",
+      "referral": "Use the VCAT website to select the relevant case type and apply online. Contact VCAT or seek legal advice if unsure which application is appropriate.",
+      "description": "Tribunal that resolves disputes and makes administrative decisions across listed Victorian case types, including guardianship, administration, tenancies and civil matters.",
+      "link": "https://www.vcat.vic.gov.au/",
+      "linkLabel": "VCAT",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Legal"
+    },
+    {
+      "id": "verified-district-nursing-15",
+      "name": "District Nursing",
+      "category": "Health / clinical at home",
+      "branchPath": [
+        "Health / clinical at home",
+        "post-acute",
+        "carer-family"
+      ],
+      "needTags": [
+        "post-acute",
+        "carer-family"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "People who are clinically stable, safe to receive care at home, consent to service, and can complete an in-home risk assessment.",
+      "provider": "Hospital (SVHM at Home)",
+      "catchment": "",
+      "referral": "Internal referral via Electronic Patient Journey Board. Other referrals via Intake Coordinator Team on 03 9231 3817 or SVAHIntake.SVHM@svha.org.au. CHSP clients over 65 via My Aged Care.",
+      "description": "Home-based nursing care including medication management, diabetes monitoring and management, wound care, catheter care and general nursing assessment.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/district-nursing",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Clinical care at home"
+    },
+    {
+      "id": "verified-home-and-community-care-program-for-younger-people-16",
+      "name": "Home and Community Care Program for Younger People",
+      "category": "Health / clinical at home",
+      "branchPath": [
+        "Health / clinical at home",
+        "post-acute",
+        "identity-specific"
+      ],
+      "needTags": [
+        "post-acute",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "young-person",
+        "aboriginal"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical",
+        "personal-care"
+      ],
+      "eligibility": "Victorians from birth to 65 years, and Aboriginal people from birth to 50 years, who need support to maintain or regain independence at home and in the community.",
+      "provider": "Victorian Government-funded providers",
+      "catchment": "Victoria; local access depends on the relevant assessment and service provider.",
+      "referral": "Access is generally through an assessment provider; some nursing and allied health services may accept direct referral.",
+      "description": "Supports independence through services such as assessment, allied health, nursing, personal or in-home support, and social or community engagement.",
+      "link": "https://www.health.vic.gov.au/home-and-community-care/hacc-program-for-younger-people",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Clinical care at home"
+    },
+    {
+      "id": "verified-hospital-in-the-home-17",
+      "name": "Hospital in the Home",
+      "category": "Health / clinical at home",
+      "branchPath": [
+        "Health / clinical at home",
+        "post-acute",
+        "housing",
+        "transport"
+      ],
+      "needTags": [
+        "post-acute",
+        "housing",
+        "transport"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "Patients who would otherwise need ED or acute ward care, are haemodynamically stable, consent to HITH, meet home-visiting risk assessment requirements and have suitable access to phone and home supports.",
+      "provider": "Hospital (SVHM at Home)",
+      "catchment": "SVHM nursing catchment is generally 25 to 30 km from Fitzroy, with subcontracted or regional services beyond where available.",
+      "referral": "Internal referral via Electronic Patient Journey Board. External referrals after discussion with HITH consultant via SVHM switch 03 9231 2211; email HITHTeam.SVHM@svha.org.au and SVAHIntake.SVHM@svha.org.au.",
+      "description": "Medically led bed-substitution and ED-diversion model delivering acute-level care in a home, work, study or alternative accommodation setting.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/hospital-in-the-home",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Clinical care at home"
+    },
+    {
+      "id": "directory-homelessness-launch-housing",
+      "name": "Launch Housing",
+      "category": "Homelessness",
+      "branchPath": [
+        "Homelessness",
+        "housing",
+        "financial-legal"
+      ],
+      "needTags": [
+        "housing",
+        "financial-legal"
+      ],
+      "situationTags": [
+        "urgent",
+        "homelessness"
+      ],
+      "supportTags": [
+        "crisis"
+      ],
+      "eligibility": "People experiencing homelessness, rough sleeping or housing stress across Greater Melbourne.",
+      "provider": "Launch Housing",
+      "catchment": "Greater Melbourne",
+      "referral": "For homelessness help call 1800 825 955. Use Launch Housing Get Help pages for crisis accommodation, rental support, women's services and rough sleeping outreach.",
+      "description": "Melbourne homelessness and community housing organisation providing crisis accommodation, rental support, outreach, health and wellbeing links and long-term housing pathways.",
+      "link": "https://www.launchhousing.org.au/",
+      "linkLabel": "Launch Housing",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-bhhp-sumner-house-18",
+      "name": "BHHP Sumner House",
+      "category": "Housing / homelessness",
+      "branchPath": [
+        "Housing / homelessness",
+        "housing",
+        "mental-health-aod",
+        "carer-family",
+        "identity-specific"
+      ],
+      "needTags": [
+        "housing",
+        "mental-health-aod",
+        "carer-family",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "aboriginal",
+        "homelessness"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "People aged 30 years and over experiencing chronic homelessness with physical or mental health issues and readiness for change. Priority for people over 40 and Aboriginal or Torres Strait Islander people.",
+      "provider": "SVHM with Launch Housing and Brotherhood of St Laurence",
+      "catchment": "Sumner House, Fitzroy.",
+      "referral": "Referrals: BHHPReferrals@svha.org.au.",
+      "description": "Residential integrated health and homelessness service for chronic homelessness and poor health, usually for 3 to 6 months.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/better-health-and-housing-program",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-crisis-and-emergency-accommodation-19",
+      "name": "Crisis and emergency accommodation",
+      "category": "Housing / homelessness",
+      "branchPath": [
+        "Housing / homelessness",
+        "housing",
+        "transport",
+        "family-violence",
+        "carer-family"
+      ],
+      "needTags": [
+        "housing",
+        "transport",
+        "family-violence",
+        "carer-family"
+      ],
+      "situationTags": [
+        "urgent",
+        "homelessness"
+      ],
+      "supportTags": [
+        "case-management",
+        "crisis"
+      ],
+      "eligibility": "People who are homeless, at risk of homelessness, or escaping family violence.",
+      "provider": "Victorian Government / funded homelessness services",
+      "catchment": "Victoria",
+      "referral": "Call 1800 825 955 for homelessness help. If escaping family violence call Safe Steps on 1800 015 188. Call 000 if in immediate danger.",
+      "description": "Statewide crisis and emergency accommodation entry information and after-hours pathways to local help.",
+      "link": "https://www.housing.vic.gov.au/crisis-emergency-accommodation",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-elizabeth-street-common-ground-20",
+      "name": "Elizabeth Street Common Ground",
+      "category": "Housing / homelessness",
+      "branchPath": [
+        "Housing / homelessness",
+        "housing",
+        "disability",
+        "mental-health-aod"
+      ],
+      "needTags": [
+        "housing",
+        "disability",
+        "mental-health-aod"
+      ],
+      "situationTags": [
+        "disability",
+        "homelessness"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical"
+      ],
+      "eligibility": "Single adults with a history of homelessness and rough sleeping, plus factors such as mental illness, drug and alcohol dependency, disability/cognitive impairment or chronic health condition that create barriers to maintaining housing.",
+      "provider": "Launch Housing with Unison Community Housing and partners",
+      "catchment": "Melbourne; referrals through homelessness access points across Victoria.",
+      "referral": "Referrals are through homelessness access points across Victoria.",
+      "description": "Permanent supportive housing initiative for long-term homelessness, providing studio apartments and ongoing 24-hour support to improve residents' health, wellbeing and lifestyle.",
+      "link": "https://www.launchhousing.org.au/service/elizabeth-street-common-ground",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-frontyard-youth-services-21",
+      "name": "Frontyard Youth Services",
+      "category": "Housing / homelessness",
+      "branchPath": [
+        "Housing / homelessness",
+        "housing",
+        "transport",
+        "financial-legal",
+        "carer-family"
+      ],
+      "needTags": [
+        "housing",
+        "transport",
+        "financial-legal",
+        "carer-family"
+      ],
+      "situationTags": [
+        "young-person",
+        "homelessness"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical",
+        "money",
+        "legal"
+      ],
+      "eligibility": "Young people aged 12 to 24 who are at risk of or experiencing homelessness in Melbourne CBD, Greater Melbourne or across Victoria.",
+      "provider": "Melbourne City Mission",
+      "catchment": "Melbourne CBD, Greater Melbourne and Victoria.",
+      "referral": "Enquire online or call 03 9977 0077; Frontyard contact details also list 1800 800 531 and frontyard@mcm.org.au.",
+      "description": "Specialist youth homelessness service with integrated support including statewide homelessness access point, case management, accommodation response, youth participation, health and wellbeing, legal and financial services, and assertive outreach.",
+      "link": "https://www.mcm.org.au/services/homelessness/frontyard",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-the-cottage-22",
+      "name": "The Cottage",
+      "category": "Housing / homelessness",
+      "branchPath": [
+        "Housing / homelessness",
+        "post-acute",
+        "housing"
+      ],
+      "needTags": [
+        "post-acute",
+        "housing"
+      ],
+      "situationTags": [
+        "homelessness",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical",
+        "personal-care"
+      ],
+      "eligibility": "People who are homeless or at risk of homelessness, haemodynamically stable, able to attend activities of daily living, independently mobile, consenting and not in acute withdrawal.",
+      "provider": "Hospital (SVHM HITH with ALERT/HIP)",
+      "catchment": "Five-bed on-site Fitzroy campus facility.",
+      "referral": "Internal referral via Electronic Patient Journey Board. External referrals: HITHTeam.SVHM@svha.org.au.",
+      "description": "Acute HITH care in a cottage setting with homelessness, addiction and social vulnerability care coordination.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/hospital-in-the-home-hith-sr-francesca-healy-cottage",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Housing"
+    },
+    {
+      "id": "verified-disability-support-pension-23",
+      "name": "Disability Support Pension",
+      "category": "Income support",
+      "branchPath": [
+        "Income support",
+        "disability",
+        "financial-legal"
+      ],
+      "needTags": [
+        "disability",
+        "financial-legal"
+      ],
+      "situationTags": [
+        "disability"
+      ],
+      "supportTags": [
+        "money"
+      ],
+      "eligibility": "People with a physical, intellectual or psychiatric condition likely to persist for more than 2 years and that stops them working, subject to medical and non-medical rules.",
+      "provider": "Services Australia",
+      "catchment": "Australia",
+      "referral": "Claim through Services Australia / myGov.",
+      "description": "Financial help for eligible people whose disability or medical condition prevents work.",
+      "link": "https://www.servicesaustralia.gov.au/disability-support-pension",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Financial"
+    },
+    {
+      "id": "verified-jobseeker-payment-24",
+      "name": "JobSeeker Payment",
+      "category": "Income support",
+      "branchPath": [
+        "Income support",
+        "financial-legal",
+        "carer-family"
+      ],
+      "needTags": [
+        "financial-legal",
+        "carer-family"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "money"
+      ],
+      "eligibility": "People aged 22 to Age Pension age who are looking for work, or are sick or injured and cannot do usual work or study for a short time, subject to income, assets and residence rules.",
+      "provider": "Services Australia",
+      "catchment": "Australia",
+      "referral": "Claim through Services Australia / myGov.",
+      "description": "Financial help for eligible people who are unemployed, looking for work, or temporarily unable to work or study due to sickness or injury.",
+      "link": "https://www.servicesaustralia.gov.au/jobseeker-payment",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Financial"
+    },
+    {
+      "id": "directory-legal-victorian-legal-aid",
+      "name": "Victorian Legal Aid",
+      "category": "Legal",
+      "branchPath": [
+        "Legal",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "Victorians needing legal information, advice, legal help chat, duty lawyer or representation depending on matter type and eligibility.",
+      "provider": "Victoria Legal Aid",
+      "catchment": "Victoria",
+      "referral": "Call 1300 792 387 or use Victoria Legal Aid online legal help chat. For court matters, check duty lawyer availability.",
+      "description": "State legal assistance service helping Victorians with legal problems, legal information, advice, legal help chat and representation for people who need it most.",
+      "link": "https://www.legalaid.vic.gov.au/",
+      "linkLabel": "Victoria Legal Aid",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Legal"
+    },
+    {
+      "id": "directory-legal-women-s-legal-service-victoria",
+      "name": "Women’s Legal Service Victoria",
+      "category": "Legal",
+      "branchPath": [
+        "Legal",
+        "financial-legal"
+      ],
+      "needTags": [
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "Women and non-binary people in Victoria, especially where family violence or sexual violence creates legal issues around safety, children, money, housing or immigration.",
+      "provider": "Women's Legal Service Victoria",
+      "catchment": "Victoria",
+      "referral": "Refer a client through the Women's Legal website, apply for legal help online, request secondary consultation, or call 1800 133 302 / 03 8622 0600.",
+      "description": "Specialist legal service offering free legal information, client referral pathways, secondary consultation, court support information, training and advocacy for safer legal responses.",
+      "link": "https://www.womenslegal.org.au/",
+      "linkLabel": "Women's Legal Service Victoria",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Legal"
+    },
+    {
+      "id": "directory-lgbtiqa-qlife-webchat-australia-wide",
+      "name": "QLife WebChat Australia Wide",
+      "category": "LGBTIQA+",
+      "branchPath": [
+        "LGBTIQA+",
+        "identity-specific"
+      ],
+      "needTags": [
+        "identity-specific"
+      ],
+      "situationTags": [
+        "lgbtiqa"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "LGBTIQ+ people in Australia wanting anonymous peer support about sexuality, gender, bodies, feelings or relationships.",
+      "provider": "QLife",
+      "catchment": "Australia-wide",
+      "referral": "Call 1800 184 527 or use QLife webchat, 3pm-9pm every day. QLife does not offer support by email.",
+      "description": "Free anonymous LGBTIQ+ peer support and referral service by phone and webchat.",
+      "link": "https://qlife.org.au/get-help",
+      "linkLabel": "QLife Get Help",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Identity-specific"
+    },
+    {
+      "id": "directory-lgbtiqa-thorne-harbour-health",
+      "name": "Thorne Harbour Health",
+      "category": "LGBTIQA+",
+      "branchPath": [
+        "LGBTIQA+",
+        "identity-specific"
+      ],
+      "needTags": [
+        "identity-specific"
+      ],
+      "situationTags": [
+        "lgbtiqa"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "LGBTIQ+ communities and people living with HIV seeking health, mental health, AOD, family violence, disability, HIV or sexual health-related services.",
+      "provider": "Thorne Harbour Health",
+      "catchment": "Victoria, South Australia and selected online/telehealth services",
+      "referral": "Call 03 9865 6700, toll free 1800 134 840, email enquiries@thorneharbour.org, or use the contact form/service pages to find the right program.",
+      "description": "Community-led HIV and LGBTIQ+ health organisation providing services across sexual health, mental health, AOD, family violence, disability, HIV support and peer programs.",
+      "link": "https://thorneharbour.org/services/",
+      "linkLabel": "Thorne Harbour Health services",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Identity-specific"
+    },
+    {
+      "id": "directory-mental-health-beyond-blue",
+      "name": "Beyond Blue",
+      "category": "Mental Health",
+      "branchPath": [
+        "Mental Health",
+        "mental-health-aod"
+      ],
+      "needTags": [
+        "mental-health-aod"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Anyone in Australia seeking brief mental health support, including people feeling overwhelmed, experiencing anxiety or depression, or supporting someone else.",
+      "provider": "Beyond Blue",
+      "catchment": "Australia",
+      "referral": "Call 1300 22 4636 for free confidential phone counselling 24/7. Webchat is also available through Beyond Blue.",
+      "description": "Free 24/7 telephone and online counselling service that can listen, provide brief support and point people toward the right mental health help.",
+      "link": "https://www.beyondblue.org.au/get-support/talk-to-a-counsellor",
+      "linkLabel": "Talk to a counsellor | Beyond Blue",
+      "source": "pasted directory",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "MH/AOD"
+    },
+    {
+      "id": "directory-mental-health-lifeline",
+      "name": "Lifeline",
+      "category": "Mental Health",
+      "branchPath": [
+        "Mental Health",
+        "mental-health-aod"
+      ],
+      "needTags": [
+        "mental-health-aod"
+      ],
+      "situationTags": [
+        "urgent"
+      ],
+      "supportTags": [
+        "crisis"
+      ],
+      "eligibility": "Anyone in Australia experiencing crisis, distress, feeling overwhelmed, or needing short-term crisis support. If life is in danger call 000.",
+      "provider": "Lifeline Australia",
+      "catchment": "Australia",
+      "referral": "Call 13 11 14, text 0477 13 11 14, or use online chat. Phone, text and chat crisis support are available 24/7.",
+      "description": "National crisis support service providing confidential short-term support by trained crisis supporters via phone, text and chat.",
+      "link": "https://www.lifeline.org.au/about-us/our-services",
+      "linkLabel": "Lifeline crisis support services",
+      "source": "pasted directory",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "MH/AOD"
+    },
+    {
+      "id": "verified-barbara-walker-centre-for-pain-management-bwcpm-25",
+      "name": "Barbara Walker Centre for Pain Management (BWCPM)",
+      "category": "Pain management",
+      "branchPath": [
+        "Pain management",
+        "post-acute",
+        "disability",
+        "condition-specific"
+      ],
+      "needTags": [
+        "post-acute",
+        "disability",
+        "condition-specific"
+      ],
+      "situationTags": [
+        "disability",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "People with persistent or chronic pain for more than 3 months that impacts daily activities; referrals assessed against statewide criteria.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "",
+      "referral": "Medical referral required: BWCPM@svha.org.au.",
+      "description": "Ambulatory outpatient interdisciplinary service for persistent and complex pain and related disability.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/barbara-walker-centre-for-pain-management-bwcpm",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "verified-inner-melbourne-post-acute-care-impac-26",
+      "name": "Inner Melbourne Post Acute Care (IMPAC)",
+      "category": "Post-acute / transition care",
+      "branchPath": [
+        "Post-acute / transition care",
+        "post-acute",
+        "housing",
+        "transport"
+      ],
+      "needTags": [
+        "post-acute",
+        "housing",
+        "transport"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "case-management",
+        "clinical",
+        "personal-care"
+      ],
+      "eligibility": "People discharged home from a public hospital or public emergency department within the last 28 days, with a new need, living in City of Yarra, City of Boroondara, City of Melbourne, or Alphington, Fairfield, Northcote or Thornbury.",
+      "provider": "North Richmond Community Health; Victorian Government-supported",
+      "catchment": "City of Yarra, City of Boroondara, City of Melbourne, Alphington, Fairfield, Northcote and Thornbury.",
+      "referral": "Self-referral or hospital staff referral. Phone 03 9418 9954; IMPACreferrals@nrch.com.au.",
+      "description": "Short-term post-acute care coordination for up to 4 weeks after public hospital discharge, arranging home care, personal care, shopping assistance, nursing, physiotherapy, cleaning, respite or emergency accommodation where eligible.",
+      "link": "https://nrch.com.au/services/impac/",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "Y",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Discharge"
+    },
+    {
+      "id": "verified-post-acute-care-27",
+      "name": "Post-acute Care",
+      "category": "Post-acute / transition care",
+      "branchPath": [
+        "Post-acute / transition care",
+        "post-acute"
+      ],
+      "needTags": [
+        "post-acute"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People needing short-term support after public hospital or emergency department discharge, with local access through Inner Melbourne Post Acute Care where eligible.",
+      "provider": "SVHM HIP / Inner Melbourne Post Acute Care via North Richmond Community Health",
+      "catchment": "SVHM-connected inner Melbourne catchment; confirm current local eligibility before referral.",
+      "referral": "For SVHM post-acute care, use Inner Melbourne Post Acute Care where eligible: phone 03 9418 9954; IMPACreferrals@nrch.com.au. Check local PAC eligibility and discharge timeframe before referral.",
+      "description": "Post-acute support sits within HIP and supports transition from hospital to home. SVHM public information states SVHM receives PAC services through Inner Melbourne Post Acute Care delivered by North Richmond Community Health.",
+      "link": "https://www.svhm.org.au/health-professionals/community-and-aged-care/health-independence-program",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Discharge"
+    },
+    {
+      "id": "verified-community-rehabilitation-centres-28",
+      "name": "Community Rehabilitation Centres",
+      "category": "Rehabilitation",
+      "branchPath": [
+        "Rehabilitation",
+        "post-acute",
+        "transport",
+        "disability"
+      ],
+      "needTags": [
+        "post-acute",
+        "transport",
+        "disability"
+      ],
+      "situationTags": [
+        "disability",
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "People in Boroondara, Yarra and Darebin who are stable, have rehabilitation goals, can actively participate, and can safely travel to the centre for centre-based service.",
+      "provider": "Hospital (SVHM Community Rehabilitation)",
+      "catchment": "Boroondara, Yarra and Darebin; centres at Kew and Fairfield.",
+      "referral": "Referrals to HIP Central Intake: phone 1300 131 470 option 1; HIPCentralReferrals@svha.org.au.",
+      "description": "Assessment and short-to-medium term rehabilitation for physical disability, frailty, chronic illness, recent change in function or recovery from injury or illness.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/community-rehabilitation-centres",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Rehabilitation"
+    },
+    {
+      "id": "verified-rehab-at-home-29",
+      "name": "Rehab at home",
+      "category": "Rehabilitation",
+      "branchPath": [
+        "Rehabilitation",
+        "post-acute"
+      ],
+      "needTags": [
+        "post-acute"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "Medically stable clients with rehabilitation goals achievable in a 2 to 3 week admission.",
+      "provider": "Hospital (SVHM)",
+      "catchment": "Yarra, Boroondara and Darebin.",
+      "referral": "Internal referral via Electronic Patient Journey Board. External referrals: svhm.rehabathome@svha.org.au.",
+      "description": "Admitted home-based specialist rehabilitation with rehabilitation physician, nursing, allied health and pharmacy input, plus 24-hour phone support.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/rehab-home",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Rehabilitation"
+    },
+    {
+      "id": "verified-rehabilitation-in-the-home-rith-difference-31",
+      "name": "Rehabilitation In The Home (RITH) - difference?",
+      "category": "Rehabilitation",
+      "branchPath": [
+        "Rehabilitation",
+        "post-acute"
+      ],
+      "needTags": [
+        "post-acute"
+      ],
+      "situationTags": [
+        "hospital-discharge"
+      ],
+      "supportTags": [
+        "clinical"
+      ],
+      "eligibility": "People in Boroondara, Yarra and Darebin south of Bell Street who are stable, have rehabilitation goals and can actively participate.",
+      "provider": "Hospital (SVHM Community Rehabilitation)",
+      "catchment": "Home-based RITH: Boroondara, Yarra and Darebin south of Bell Street.",
+      "referral": "HIP Central Referrals: phone 1300 131 470 option 1; HIPCentralReferrals@svha.org.au.",
+      "description": "Non-admitted Community Rehabilitation home service after hospital admission. Distinct from Rehab at Home, which is admitted rehabilitation.",
+      "link": "https://www.svhm.org.au/health-professionals/gp-liaison/community-and-home-services/rehabilitation-in-the-home-rith",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "Y",
+        "personalCare": ""
+      },
+      "displayCategory": "Rehabilitation"
+    },
+    {
+      "id": "directory-support-for-specific-health-conditions-cancer-council-victoria",
+      "name": "Cancer Council Victoria",
+      "category": "Support for Specific Health Conditions",
+      "branchPath": [
+        "Support for Specific Health Conditions",
+        "condition-specific"
+      ],
+      "needTags": [
+        "condition-specific"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Cancer patients, people living with cancer, families, carers, friends, teachers, students and healthcare professionals.",
+      "provider": "Cancer Council",
+      "catchment": "Australia; state and territory Cancer Councils.",
+      "referral": "Call Cancer Council 13 11 20. Service is generally open Monday to Friday 9am-5pm, with some state variation.",
+      "description": "Free confidential cancer information and support service offering emotional, practical and cancer-related information support.",
+      "link": "https://www.cancer.org.au/support-and-services/cancer-council-13-11-20",
+      "linkLabel": "Cancer Council 13 11 20",
+      "source": "pasted directory",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "directory-support-for-specific-health-conditions-dementia-australia",
+      "name": "Dementia Australia",
+      "category": "Support for Specific Health Conditions",
+      "branchPath": [
+        "Support for Specific Health Conditions",
+        "condition-specific"
+      ],
+      "needTags": [
+        "condition-specific"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People living with dementia or mild cognitive impairment, carers, family/friends, professionals, or people concerned about thinking, mood or memory.",
+      "provider": "Dementia Australia",
+      "catchment": "Australia",
+      "referral": "Call the National Dementia Helpline on 1800 100 500, use live chat, email helpline@dementia.org.au, or submit a personal referral form.",
+      "description": "Free confidential 24/7 helpline providing dementia information, advice, emotional support, guidance and links to services.",
+      "link": "https://www.dementia.org.au/get-support/national-dementia-helpline",
+      "linkLabel": "National Dementia Helpline | Dementia Australia",
+      "source": "pasted directory",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "directory-support-for-specific-health-conditions-leukaemia-foundation",
+      "name": "Leukaemia Foundation",
+      "category": "Support for Specific Health Conditions",
+      "branchPath": [
+        "Support for Specific Health Conditions",
+        "condition-specific"
+      ],
+      "needTags": [
+        "condition-specific"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People living with blood cancer, carers, family members, and healthcare providers supporting someone with blood cancer.",
+      "provider": "Leukaemia Foundation",
+      "catchment": "Australia",
+      "referral": "Call the Blood Cancer Support Line on 1800 620 420, Monday to Friday 9am-4pm AEST. Healthcare professionals can use the online support services referral form.",
+      "description": "National blood cancer support service offering information, emotional support, accommodation, transport, financial support, support groups and navigation.",
+      "link": "https://www.leukaemia.org.au/get-support/support-services-application/",
+      "linkLabel": "Leukaemia Foundation support services application and referral form",
+      "source": "pasted directory",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "verified-stroke-foundation-strokeline",
+      "name": "Stroke Foundation - StrokeLine",
+      "category": "Condition-specific support",
+      "branchPath": [
+        "Condition-specific support",
+        "stroke",
+        "neurological"
+      ],
+      "needTags": [
+        "condition-specific",
+        "stroke",
+        "neurological",
+        "rehabilitation"
+      ],
+      "situationTags": [
+        "post-discharge",
+        "carer-support",
+        "new-diagnosis"
+      ],
+      "supportTags": [
+        "information",
+        "navigation",
+        "phone-support"
+      ],
+      "eligibility": "Stroke survivors, families, carers and health professionals seeking stroke information and support in Australia.",
+      "provider": "Stroke Foundation",
+      "catchment": "Australia-wide",
+      "referral": "Call StrokeLine on 1800 787 653 or use the Stroke Foundation website for stroke information, recovery and support resources.",
+      "description": "National stroke information and support line helping stroke survivors, families, carers and professionals access practical information, recovery resources and service navigation.",
+      "link": "https://strokefoundation.org.au/what-we-do/for-survivors-and-carers/strokeline",
+      "linkLabel": "Stroke Foundation - StrokeLine",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "directory-support-for-specific-health-conditions-multiple-sclerosis-ms-society-of-australia",
+      "name": "MS Plus",
+      "category": "Support for Specific Health Conditions",
+      "branchPath": [
+        "Support for Specific Health Conditions",
+        "condition-specific"
+      ],
+      "needTags": [
+        "condition-specific"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "People living with multiple sclerosis or other neurological conditions, plus carers, family and friends seeking information, supports or services.",
+      "provider": "MS Plus",
+      "catchment": "Victoria, New South Wales, ACT, Tasmania and telehealth depending on service",
+      "referral": "Call MS Plus freecall 1800 042 138 or use the MS Plus health professional referral pathway / service finder.",
+      "description": "Neuro wellbeing organisation offering emotional and practical support for every stage of the MS journey, plus NDIS, allied health, accommodation, employment, peer support and education programs.",
+      "link": "https://www.msplus.org.au/",
+      "linkLabel": "MS Plus",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Condition-specific"
+    },
+    {
+      "id": "verified-vptas-32",
+      "name": "Victorian Patient Transport Assistance Scheme (VPTAS)",
+      "category": "Transport / travel",
+      "branchPath": [
+        "Transport / travel",
+        "housing",
+        "transport",
+        "financial-legal"
+      ],
+      "needTags": [
+        "housing",
+        "transport",
+        "financial-legal"
+      ],
+      "situationTags": [],
+      "supportTags": [
+        "money",
+        "legal"
+      ],
+      "eligibility": "Victorian residents who meet citizenship or residency rules and travel long distances to the closest eligible specialist medical or dental service, including 100 km one way or 500 km in one week from rural/regional Victoria.",
+      "provider": "Victorian Government",
+      "catchment": "Victoria",
+      "referral": "Patient, guardian, power of attorney or guardian can submit a claim with specialist confirmation within 12 months.",
+      "description": "Financial assistance toward travel and accommodation costs for eligible Victorians travelling for specialist treatment.",
+      "link": "https://www.health.vic.gov.au/rural-health/victorian-patient-transport-assistance-scheme-vptas",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Transport"
+    },
+    {
+      "id": "directory-vahs-victorian-aboriginal-community-controlled-health-organisation-vaccho",
+      "name": "Victorian Aboriginal Community Controlled Health Organisation (VACCHO)",
+      "category": "VAHS",
+      "branchPath": [
+        "VAHS",
+        "information",
+        "identity-specific"
+      ],
+      "needTags": [
+        "information",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "aboriginal"
+      ],
+      "supportTags": [
+        "information"
+      ],
+      "eligibility": "Aboriginal and Torres Strait Islander people and communities seeking culturally safe health and wellbeing pathways, usually via local Aboriginal Community Controlled Organisations.",
+      "provider": "VACCHO",
+      "catchment": "Victoria",
+      "referral": "Use VACCHO member information to identify a local Aboriginal Community Controlled Organisation. For sector/member navigation contact VACCHO on 03 9411 9411.",
+      "description": "Peak representative body for Aboriginal and Torres Strait Islander health and wellbeing in Victoria, supporting 34 member Aboriginal Community Controlled Organisations.",
+      "link": "https://www.vaccho.org.au/",
+      "linkLabel": "VACCHO",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Identity-specific"
+    },
+    {
+      "id": "directory-vahs-victorian-aboriginal-legal-service-vals",
+      "name": "Victorian Aboriginal Legal Service (VALS)",
+      "category": "VAHS",
+      "branchPath": [
+        "VAHS",
+        "information",
+        "financial-legal",
+        "identity-specific"
+      ],
+      "needTags": [
+        "information",
+        "financial-legal",
+        "identity-specific"
+      ],
+      "situationTags": [
+        "aboriginal"
+      ],
+      "supportTags": [
+        "legal"
+      ],
+      "eligibility": "Aboriginal and Torres Strait Islander people in Victoria needing culturally safe legal assistance or support programs.",
+      "provider": "Victorian Aboriginal Legal Service",
+      "catchment": "Victoria",
+      "referral": "Call VALS on 1800 064 865 for legal assistance and first contact. For custody or urgent legal situations, use VALS' 24-hour criminal law pathway as directed by VALS.",
+      "description": "Culturally capable legal service for Aboriginal people in criminal, family and civil law, with client service officers and community justice programs including family violence and women's transitional housing support.",
+      "link": "https://www.vals.org.au/",
+      "linkLabel": "VALS",
+      "source": "official public webpage",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "",
+        "otherAh": "",
+        "personalCare": ""
+      },
+      "displayCategory": "Legal"
+    },
+    {
+      "id": "verified-dva-33",
+      "name": "Department of Veterans' Affairs (DVA)",
+      "category": "Veterans support",
+      "branchPath": [
+        "Veterans support",
+        "transport",
+        "financial-legal",
+        "carer-family",
+        "veterans"
+      ],
+      "needTags": [
+        "transport",
+        "financial-legal",
+        "carer-family",
+        "veterans"
+      ],
+      "situationTags": [
+        "veteran"
+      ],
+      "supportTags": [
+        "clinical",
+        "personal-care"
+      ],
+      "eligibility": "DVA clients and members of the veteran community who are eligible for DVA health supports or Veteran Card arrangements.",
+      "provider": "Australian Government Department of Veterans' Affairs",
+      "catchment": "Australia",
+      "referral": "DVA contact: 1800 838 372. Access may be through DVA Veteran Card arrangements, MyService/myGov, or DVA health providers depending on the support.",
+      "description": "DVA health support can help with health care costs, medicines, transport, social networks, staying at home, care at home and aged care pathways.",
+      "link": "https://www.dva.gov.au/what-we-help-with/health-support",
+      "source": "audited workbook",
+      "confidence": "verified-public-source",
+      "disciplines": {
+        "caseManager": "",
+        "nurse": "Y",
+        "otherAh": "Y",
+        "personalCare": "Y"
+      },
+      "displayCategory": "Financial"
+    }
+  ]
+}
