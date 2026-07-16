@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hospital Support Finder</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Created by Alex</p>
+          <h1 id="page-title">Hospital support finder</h1>
+        </div>
+        <div class="meta">
+          <span id="service-count">Loading database</span>
+          <span id="cart-count">0 selected</span>
+        </div>
+      </section>
+
+      <nav class="tabs" aria-label="Finder mode">
+        <div>
+          <button id="finder-tab" class="tab active" type="button">Finder</button>
+          <button id="all-tab" class="tab" type="button">All services</button>
+        </div>
+      </nav>
+
+      <section class="workspace" aria-label="Service finder">
+        <aside class="panel">
+          <div class="progress">
+            <button class="text-button" id="back-button" type="button">Back</button>
+            <span id="step-label">Question 1</span>
+            <button class="text-button" id="reset-button" type="button">Reset</button>
+          </div>
+
+          <div class="question-block">
+            <h2 id="question-title">Is it related to discharge planning?</h2>
+            <p id="question-help" hidden></p>
+            <div id="options" class="options"></div>
+          </div>
+        </aside>
+
+        <section class="result-card" aria-live="polite">
+          <div class="result-heading">
+            <p class="eyebrow">Recommendation</p>
+            <span id="confidence-pill" class="pill">Narrowing</span>
+          </div>
+
+          <div id="result-empty" class="empty-result">
+            <h2>Still narrowing.</h2>
+            <p>Answer until the branch is specific enough, or use search/all services.</p>
+          </div>
+
+          <div id="result-content" hidden>
+            <h2 id="result-name"></h2>
+            <p id="result-subtitle" class="service-subtitle" hidden></p>
+            <div class="bullet-grid">
+              <div id="result-description-block">
+                <h3>Description</h3>
+                <ul id="result-description"></ul>
+              </div>
+              <div id="result-referral-block">
+                <h3>Referral pathway</h3>
+                <ul id="result-referral"></ul>
+              </div>
+              <div id="result-eligibility-block">
+                <h3>Eligibility / catchment</h3>
+                <ul id="result-eligibility"></ul>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a id="result-link" class="primary-link" href="#" target="_blank" rel="noreferrer">Open source</a>
+              <button id="add-button" type="button">Add to saved services</button>
+              <button id="copy-button" type="button">Copy summary</button>
+            </div>
+
+            <div class="alternatives">
+              <h3>Other close matches</h3>
+              <div id="alternatives"></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="all-services" class="all-services" hidden>
+        <div class="all-layout">
+          <aside class="all-browser">
+            <div class="all-browser-head">
+              <label class="all-search" for="quick-search">
+                <span>Search services</span>
+                <input id="quick-search" type="search" placeholder="PAC, HIP, housing, NDIS, transport..." />
+              </label>
+              <nav id="category-nav" class="category-nav" aria-label="Service categories"></nav>
+            </div>
+
+            <div class="all-browser-scroll">
+              <section class="service-section priority-section">
+                <div class="section-head compact">
+                  <h3>Core hospital / discharge</h3>
+                  <p>Highest-frequency hospital flow pathways.</p>
+                </div>
+                <div id="priority-list" class="service-card-grid"></div>
+              </section>
+
+              <div id="category-list" class="category-list"></div>
+            </div>
+          </aside>
+
+          <section class="all-result-card" aria-live="polite">
+            <div id="all-empty" class="empty-result">
+              <h2>Select a service.</h2>
+              <p>Pick from the left. The detail will update here.</p>
+            </div>
+
+            <div id="all-detail" hidden>
+              <div class="result-heading">
+                <p class="eyebrow">Service detail</p>
+              </div>
+              <h2 id="all-detail-name"></h2>
+              <p id="all-detail-subtitle" class="service-subtitle" hidden></p>
+              <div class="bullet-grid">
+                <div id="all-description-block">
+                  <h3>Description</h3>
+                  <ul id="all-description"></ul>
+                </div>
+                <div id="all-referral-block">
+                  <h3>Referral pathway</h3>
+                  <ul id="all-referral"></ul>
+                </div>
+                <div id="all-eligibility-block">
+                  <h3>Eligibility / catchment</h3>
+                  <ul id="all-eligibility"></ul>
+                </div>
+              </div>
+              <div class="actions">
+                <a id="all-detail-link" class="primary-link" href="#" target="_blank" rel="noreferrer">Open source</a>
+                <button id="all-detail-add" type="button">Add to saved services</button>
+                <button id="all-detail-copy" type="button">Copy summary</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <aside class="cart-float" aria-label="Saved services">
+        <button class="cart-trigger" type="button">
+          <span>Saved services</span>
+          <strong id="cart-float-count">0</strong>
+        </button>
+        <div class="cart-popover">
+          <div class="cart-head">
+            <h2>Saved services</h2>
+            <div>
+              <button class="text-button" id="copy-cart" type="button">Copy all</button>
+              <button class="text-button" id="clear-cart" type="button">Clear</button>
+            </div>
+          </div>
+          <div id="cart-list"></div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="./data/services-data.js"></script>
+    <script src="./data/question-tree.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
